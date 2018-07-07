@@ -288,6 +288,7 @@ class UserVerification
             throw new UserNotFoundException();
         }
 
+        $user = (object)$user;
         $user->table = $table;
 
         return $user;
